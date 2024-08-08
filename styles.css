@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  color: #333;
+  background-color: white;
+}
+
+.official-logo {
+  height: 25px;
+  width: auto;
+}
+.nav-bar {
+  width: 100%;
+  position: fixed;
+}
+.nav-bar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  background-color: #c4c9cb;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+.nav-bar a {
+  color: rgb(4, 61, 52);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;  
+}
+.nav-bar a:hover {
+  background-color: transparent;
+  color: green;
+  }
+.nav-bar li {
+  float: inherit;
+}
+.banners {
+  width: 100%;
+  height: 400px;
+}
+
+.text-center h3 {
+  font-weight: bold;
+  color: rgb(4, 61, 52);
+  font-weight: bold;
+}
+.contact-form {
+  width: 100;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+background:  #c4c9cb;
+display: flex;
+flex-direction: column;
+padding: 2vw 4vw;
+width: 90%;
+max-width: 600px;
+border-radius: 1px;
+}
+form h5 {
+  color: rgb(4, 61, 52);
+  font-weight: bold;
+}
+.form-element {
+  border: 0px;
+  margin: 2px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  outline: none;
+  font-size: 16px;
+}
+
+
+button {
+  background-color: transparent;
+  color: rgb(4, 61, 52);
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-container {
+    width: 100%;
+}
+.footer-container ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  background-color: #c4c9cb;
+  padding: 10px;
+  margin: 0px;
+  overflow: hidden;
+}
+.footer-container a {
+  color: rgb(4, 61, 52);
+  text-decoration: none;
+  padding: 0px;
+  display: block;
+  font-size: 14px;
+  font-weight: bold; 
+}
+.footer-container a:hover {
+  background-color: transparent;
+  color: green;
+  }
+.social-media {
+  height: 15px;
+  width: 15px;
+}
+.partners-logo {
+  height: 25px;
+  width: 100px;
+}
+#copyright {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(4, 61, 52);
+  text-align: center;
+  padding: 10px;
+}
+@media screen and (max-width: 576px) {}

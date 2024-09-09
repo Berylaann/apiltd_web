@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0px;
+  min-height: 100vh;
   color: #333;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.887);
   }
 
 .official-logo {
@@ -84,7 +86,6 @@ form h5 {
   font-size: 16px;
 }
 
-
 button {
   background-color: transparent;
   color: rgb(4, 61, 52);
@@ -96,19 +97,14 @@ button {
   font-weight: bold;
 }
 
-.footer-container {
-    width: 100%;
-}
-.footer-container ul {
+.flex-container {
   display: flex;
   justify-content: space-evenly;
-  list-style-type: none;
   background-color: #c4c9cb;
-  padding: 10px;
+  padding: 20px;
   margin: 0px;
-  overflow: hidden;
 }
-.footer-container a {
+.flex-container a {
   color: rgb(4, 61, 52);
   text-decoration: none;
   padding: 0px;
@@ -116,7 +112,7 @@ button {
   font-size: 14px;
   font-weight: bold; 
 }
-.footer-container a:hover {
+.flex-container a:hover {
   background-color: transparent;
   color: green;
   }
@@ -135,8 +131,37 @@ button {
   text-align: center;
   padding: 10px;
 }
+
 @media screen and (max-width: 576px) {
 input[type="text"] {
   font-size: 12px;
+}
+.nav-bar {
+  display: block;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  background-color: #c4c9cb;
+}
+.nav-bar ul {
+  display: inline;
+  background-color: #c4c9cb;
+}
+.nav-bar a {
+  display: inline-block;
+  padding: 5px;
+}
+.nav-bar li + li:before {
+padding: 0 5px;
+color: white;
+}
+.flex-container {
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+.flex-container a {
+  padding: 5px;
 }
 }

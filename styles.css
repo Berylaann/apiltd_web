@@ -12,6 +12,8 @@ body {
   min-height: 100vh;
   color: #333;
   background-color: rgba(255, 255, 255, 0.887);
+  display: flex;
+  flex-direction: column;
   }
 
   .header {
@@ -27,6 +29,10 @@ body {
     background: #c4c9cb;
   }
 
+  main {
+    flex-grow: 1;
+  }
+
 .official-logo {
   padding-left: 30px;
   height: 50px;
@@ -36,27 +42,21 @@ body {
 .navbar a {
   color: rgb(4, 61, 52);
   text-decoration: none;
-  display: block;
-  text-align: center;
   font-size: 1rem;
   font-weight: bold; 
   margin-left: 2.5rem;
 }
-.icons {
-  position: absolute;
-  right: 5%;
-  font-size: 2.8rem;
-  color: #fff;
-  cursor: pointer;
-  display: none;
-}
-#check {
-  display: none;
-}
+
 .navbar a:hover {
   background-color: transparent;
   color: green;
   }
+
+.nav-link:active {
+  color: orange;
+  background-color: green;
+  border-radius: 2px;
+}
 
 .align-items-center{
   display: flex;
@@ -67,11 +67,14 @@ body {
 }
 .banners{
   width: 100%;
-  height: auto;
+  height: 400px;
 }
 .cover {
   object-fit: cover;
-  object-position: center;
+  object-position: top;
+  width: 100%;
+  height: 400px;
+
 }
 .text-center {
   display: flex;
@@ -82,39 +85,34 @@ body {
   color: rgb(4, 61, 52);
   margin: 30px;
 }
-.grid-container{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  max-width: 100%;
-  margin: 10px;
-}
-.grid-items {
-  background-color: #c4c9cb;
-  margin: 5px;
-}
-.grid-items h4 {
+
+ .wrapper {
+    display:flex;
+    gap: 10px;
+    margin: 50px;
+  }
+  .wrapper img,
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+.card-title h6 {
   font-weight: bold;
-  color: rgb(4, 61, 52);
+  color: rgb(4, 61, 21);
   text-align: center;
-  padding: 5px;
-  
+  padding: 5px;  
 }
 .grid-items p {
   text-align: center;
   background-color: #c4c9cb;
 }
- #service_img{
-  max-width: 100%;
-  height: 500px;
-}
-.photo-container {
+.image-container {
   display: flex;
   justify-content:space-around;
   align-items: center; 
   margin: 10px;
 }
-.photo-container img {
+.image-container img {
 width: 100%;
 padding: 5px;
 }
@@ -194,28 +192,48 @@ button {
   padding: 10px;
 }
 
-@media screen and(max-width: 576px) {
-  
-input[type="text"] {
-  font-size: 10px;
+@media only screen and (max-width: 576px) {
+
+  body {
+  display: flex;
+  flex-direction: column;
 }
-.navbar {
-  display: block;
-  width: 100%;
-  position: absolute;
-  background-color: #c4c9cb;
+main {
+    flex-grow: 1;
+  }
+  .header {
+    display: inline-block;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  } 
+  .navbar {
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 12px;
+    text-align: center;
+  }
+  .navbar a {
+    display: inline;
+    padding: 5px;
+  }
+  input [type="email"] {
+        font-size: 14px;
+    }
+  .wrapper {
+    width: 100%;
+    display: inline;
+    flex-direction: row;
+  }
+
+  .photo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center; 
 }
-.navbar a {
-  font-size: 12px;
-  display: block;
-  text-align: center;
-  padding: 5px;
-}
-.nav-bar a + a:before {
-padding: 0 5px;
-color: white;
-}
-.flex-container {
+  .flex-container {
   flex-direction: column;
   width: 100%;
   text-align: center;
@@ -223,5 +241,11 @@ color: white;
 }
 .flex-container a {
   padding: 5px;
+ }
 }
-}
+
+ @media only screen and (min-width: 577px) and (max-width: 768px) {
+
+ }
+
+

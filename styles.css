@@ -74,7 +74,6 @@ body {
   object-position: top;
   width: 100%;
   height: 400px;
-
 }
 .text-center {
   display: flex;
@@ -156,6 +155,29 @@ button {
   font-size: 16px;
   font-weight: bold;
 }
+.btn.btn-primary {
+        background-color: #515253;
+        color: #fff;
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        border-radius: 5px;
+      }
+      .btn.btn-primary:hover {
+        background-color: rgb(7, 77, 36);
+      }
+
+/*carousels*/     
+.carousel-inner {
+  max-width: 100%;
+  height: 500px;
+}
+.d-block w-100 {
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+  height: 500px;
+}
 
 .flex-container {
   display: flex;
@@ -176,6 +198,8 @@ button {
   background-color: transparent;
   color: green;
   }
+
+
 .social-media {
   height: 15px;
   width: 15px;
@@ -192,6 +216,8 @@ button {
   padding: 10px;
 }
 
+/* Responsive Section */
+/* Small screens (Max-width 576px) */
 @media only screen and (max-width: 576px) {
 
   body {
@@ -245,7 +271,13 @@ main {
 }
 
  @media only screen and (min-width: 577px) and (max-width: 768px) {
-
+  body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+    flex-grow: 1;
+  }
  }
 
 

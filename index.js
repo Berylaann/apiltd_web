@@ -10,5 +10,6 @@ function sendEmail(){
     }).then(
       message => alert(message)
     );
+}
  
- }
+console.log("Hello Everyone!");

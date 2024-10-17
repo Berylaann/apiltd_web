@@ -26,7 +26,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: #c4c9cb;
+    background: rgb(244, 244, 244);
   }
 
   main {
@@ -55,7 +55,7 @@ body {
 .nav-link:active {
   color: orange;
   background-color: green;
-  border-radius: 2px;
+  border-radius: 25px;
 }
 
 .align-items-center{
@@ -174,11 +174,11 @@ button {
   width: 100%;
   height: 500px;
 }
-
+/* Footer */
 .flex-container {
   display: flex;
   justify-content: space-evenly;
-  background-color: #c4c9cb;
+  background: #f2f3f3;
   padding: 20px;
   margin: 0px;
 }

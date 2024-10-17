@@ -13,3 +13,5 @@ function sendEmail(){
 }
  
 console.log("Hello Everyone!");
+
+let username;

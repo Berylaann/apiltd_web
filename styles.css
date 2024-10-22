@@ -53,12 +53,14 @@ body {
   color: green;
   }
 
-.nav-link:active {
-  color: orange;
+.nav-link:active ::before {
   background-color: green;
+}
+nav-link:active ::after {
+  color: orange;
   border-radius: 25px;
 }
-
+.lead 
 .align-items-center{
   display: flex;
   flex-direction: column;
@@ -155,12 +157,12 @@ button {
   font-size: 16px;
   font-weight: bold;
 }
-.btn.btn-primary {
+.btn btn-primary {
         background-color: #515253;
         color: #fff;
         border-radius: 5px;
       }
-      .btn.btn-primary:hover {
+      .btn btn-primary:hover {
         background-color: rgb(7, 77, 36);
       }
 

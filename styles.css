@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-  
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,25 +14,25 @@ body {
   background-color: rgba(255, 255, 255, 0.887);
   display: flex;
   flex-direction: column;
-  }
+}
 
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.3rem 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    background: rgb(244, 244, 244);
-  }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background: rgb(244, 244, 244);
+}
 
-  main {
-    flex-grow: 1;
-    margin-top: 92px;
-  }
+main {
+  flex-grow: 1;
+  margin-top: 92px;
+}
 
 .official-logo {
   padding-left: 30px;
@@ -44,31 +44,45 @@ body {
   color: rgb(4, 61, 52);
   text-decoration: none;
   font-size: 1rem;
-  font-weight: bold; 
+  font-weight: bold;
   margin-left: 2.5rem;
 }
 
 .navbar a:hover {
   background-color: transparent;
   color: green;
-  }
+}
 
 .nav-link:active ::before {
   background-color: green;
 }
-nav-link:active ::after {
+.nav-link:active ::after {
   color: orange;
   border-radius: 25px;
 }
-.lead 
-.align-items-center{
+.lead .align-items-center {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: space-evenly;
   object-fit: contain;
 }
-.banners{
+.flex-start {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  
+}
+.full-width {
+  float: left;
+}
+.badge {
+height:5px; 
+width:150px;
+}
+.banners {
   width: 100%;
   height: 400px;
 }
@@ -81,27 +95,30 @@ nav-link:active ::after {
 .text-center {
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.text-center h3 {
+.text-center h1 {
   font-weight: bold;
   color: rgb(4, 61, 52);
   margin: 30px;
+  padding: 20px;
 }
 
- .wrapper {
-    display:flex;
-    gap: 10px;
-    margin: 50px;
-  }
-  .wrapper img,
-  .card {
-    width: 100%;
-    height: 100%;
-  }
+.wrapper {
+  display: flex;
+  gap: 10px;
+  margin: 50px;
+}
+.wrapper img,
+.card {
+  width: 100%;
+  height: 100%;
+}
 .card-title h6 {
   font-weight: bold;
   color: rgb(4, 61, 21);
-  text-align: center;  
+  text-align: center;
 }
 .grid-items p {
   text-align: center;
@@ -109,13 +126,13 @@ nav-link:active ::after {
 }
 .image-container {
   display: flex;
-  justify-content:space-around;
-  align-items: center; 
+  justify-content: space-around;
+  align-items: center;
   margin: 10px;
 }
 .image-container img {
-width: 100%;
-padding: 5px;
+  width: 100%;
+  padding: 5px;
 }
 .contact-form {
   width: 100;
@@ -126,13 +143,13 @@ padding: 5px;
   justify-content: center;
 }
 form {
-background:  #c4c9cb;
-display: flex;
-flex-direction: column;
-padding: 2vw 4vw;
-width: 90%;
-max-width: 600px;
-border-radius: 1px;
+  background: #c4c9cb;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 1px;
 }
 form h5 {
   color: rgb(4, 61, 52);
@@ -157,16 +174,16 @@ button {
   font-size: 16px;
   font-weight: bold;
 }
-.btn btn-primary {
-        background-color: #515253;
-        color: #fff;
-        border-radius: 5px;
-      }
-      .btn btn-primary:hover {
-        background-color: rgb(7, 77, 36);
-      }
+.btn btn-secondary {
+  background-color: #515253;
+  color: #fff;
+  border-radius: 5px;
+}
+.btn btn-secondary:hover {
+  background-color: rgb(7, 77, 36);
+}
 
-/*carousels*/     
+/*carousels*/
 .carousel-inner {
   max-width: 100%;
   height: 600px;
@@ -191,13 +208,12 @@ button {
   padding: 0px;
   display: block;
   font-size: 14px;
-  font-weight: bold; 
+  font-weight: bold;
 }
 .flex-container a:hover {
   background-color: transparent;
   color: green;
-  }
-
+}
 
 .social-media {
   height: 15px;
@@ -218,12 +234,11 @@ button {
 /* Responsive Section */
 /* Small screens (Max-width 576px) */
 @media only screen and (max-width: 576px) {
-
   body {
-  display: flex;
-  flex-direction: column;
-}
-main {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
     flex-grow: 1;
   }
   .header {
@@ -232,7 +247,7 @@ main {
     width: 100%;
     text-align: center;
     font-size: 12px;
-  } 
+  }
   .navbar {
     flex-direction: column;
     justify-content: space-around;
@@ -244,8 +259,8 @@ main {
     padding: 5px;
   }
   input [type="email"] {
-        font-size: 14px;
-    }
+    font-size: 14px;
+  }
   .wrapper {
     width: 100%;
     display: inline;
@@ -253,30 +268,28 @@ main {
   }
 
   .photo-container {
-  display: flex;
-  flex-direction: column;
-  justify-content:space-around;
-  align-items: center; 
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
   .flex-container {
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  font-size: 12px;
-}
-.flex-container a {
-  padding: 5px;
- }
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+  .flex-container a {
+    padding: 5px;
+  }
 }
 
- @media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
   body {
-  display: flex;
-  flex-direction: column;
-}
-main {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
     flex-grow: 1;
   }
- }
-
-
+}

@@ -35,10 +35,8 @@ body {
 }
 main {
   flex-grow: 1;
-  margin-top: 92px;
+  margin-top: 90px;
 }
-
-
 
 .navbar a {
   color: rgb(4, 61, 52);
@@ -53,12 +51,8 @@ main {
   color: green;
 }
 
-.nav-link:active::before {
+.about active {
   background-color: green;
-}
-.nav-link:active::after {
-  color: orange;
-  border-radius: 25px;
 }
 .lead .align-items-center {
   display: flex;
@@ -110,7 +104,7 @@ main {
   margin: 50px;
   padding: bottom 0;
   justify-content: center;
-  align-items:stretch;
+  align-items: stretch;
   flex-direction: row;
 }
 .wrapper img,
@@ -123,17 +117,6 @@ main {
   color: rgb(4, 61, 21);
   text-align: center;
 }
-
-.box {
-background-color: whitesmoke;
-border: 1px solid #ddd;
-padding: 15px;
-width: 800px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-margin: 0;
-border-radius: 8px;
-}
-
 .contact-form {
   width: 100;
   /* height: 100vh; */
@@ -272,16 +255,16 @@ button {
     align-items: center;
   }
   .wrapper,
-.card {
-  display: block;
-  flex-direction: column;
-  margin-bottom: 20px;
-  margin-left: 60px;
-}
-footer{
-  max-width: 100%;
-  background: #f2f3f3;
-}
+  .card {
+    display: block;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-left: 60px;
+  }
+  footer {
+    max-width: 100%;
+    background: #f2f3f3;
+  }
   .flex-container {
     flex-direction: column;
     width: 100%;

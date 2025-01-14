@@ -1,4 +1,11 @@
-function sendEmail(){
+const pathName = window.location.pathname;
+const pageName = pathName.split("/").pop();
+
+
+
+
+
+function sendEmail() {
     Email.send({
         Host : "smtp.gmail.com",
         Username : "berylaann@gmail.com",
@@ -12,7 +19,6 @@ function sendEmail(){
     );
 }
  
-
 let video = document.getElementById("myVideo");
 let btn = document.getElementById("myBtn");
 
@@ -26,4 +32,3 @@ function myFunction() {
   }
 }
 
-let username;

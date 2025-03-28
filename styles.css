@@ -110,9 +110,25 @@ a.active, a:hover {
   /* padding: bottom 0; */
   /* flex-direction: row; */
 }
+.wrapper-products {
+  display: flex;
+  flex-wrap: wrap; /* Key for responsiveness */
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px; /* Consistent padding */
+  margin: 20px; /* Reduced margin */
+  /* padding: bottom 0; */
+  /* flex-direction: row; */
+}
 .wrapper > * {
   /* Target direct children of .wrapper */
   flex: 1 1 300px; /* Each card takes at least 300px, or more if space allows */
+}
+.wrapper-products img,
+.card {
+  width: 100%; /* Important: Make sure images and cards scale */
+  height: 250px; /* Maintain aspect ratio */ 
 }
 .wrapper img,
 .card {
